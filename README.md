@@ -59,15 +59,6 @@ Boost customer retention with custom point systems, challenges, and reward featu
 4️⃣ **Test** – Ensure perfect performance on all devices.  
 5️⃣ **Deploy** – Launch smoothly and provide ongoing support.
 
----
-
-## 🧰 Tech Stack
-
-- **Frontend:** Next.js, React, TailwindCSS  
-- **Backend:** Node.js, Express, Firebase, MongoDB  
-- **Mobile:** Flutter, React Native  
-- **AI / Automation:** Python, Dialogflow, OpenAI API  
-- **Game Engine:** Unity (2D & 3D)  
 
 ---
 
