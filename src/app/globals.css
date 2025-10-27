@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827; /* Changed for better contrast */
+  --primary-bg: #1a1a3d;
+  --card-bg: #2a2a4d;
+  --accent-color: #9333ea;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: #06b6d4; /* Cyan 500 */
+  --color-accent-dark: #0891b2; /* Cyan 600 */
+  --color-cta-primary: #ff6b6b    ; /* New CTA color */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-poppins);
+  --font-mono: var(--font-geist-mono); /* Keep mono for now */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f9fafb; /* Lighter gray for dark mode */
+  }
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans); /* Use Inter for body */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display); /* Use Poppins for headings */
+  font-weight: 800; /* Extra-bold by default */
+  letter-spacing: -0.025em; /* Tighter tracking */
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 15s ease infinite;
+}
